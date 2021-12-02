@@ -12,8 +12,8 @@ bin/solr create -c quora_core
 # Create the core for Reddit
 bin/solr create -c reddit_core
 # Now create the fields as specified below
-bin/post -c quora_core ~/{path_to_quora_csv_file}/Quora_1.csv
-bin/post -c reddit_core ~/{path_to_reddit_csv_file}/Reddit_1.csv
+bin/solr post -c quora_core ~/{path_to_quora_csv_file}/Quora_1.csv
+bin/solr post -c reddit_core ~/{path_to_reddit_csv_file}/Reddit_1.csv
 ```
 - Alternatively you can just pick the pre-made cores/collections that I've included in the `Core` dir. Note:
 in this case the reddit core is under the name `workpls`, I didn't want to change it to avoid risking any
