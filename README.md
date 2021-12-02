@@ -2,7 +2,7 @@
 A search engine that allows users to search for question on Quora or topics on reddit related to a specific query. The search engine shall provide the user an interface for searching, browsing and presenting the results using a basic relevance-feedback implementation.
 
 ## 👉 Setup
-- All the files used to crawl, scrap and create the solr core are available for download. But you only need the files inside `project website` and `csv` dir. The csv files were obtained by running the python scripts inside the `crawlers` folder. Note to the Quora.py script: Quora's website requires you to update the autenthicated login key, usually by logging in, getting it in the cookies and updating the script.
+- All the files used to crawl, scrap and create the solr core are available for download. But you only need the files inside `project website` and `csv` dir. The csv files were obtained by running the python scripts inside the `crawlers` folder. 
 - I used two main cores for the Engine, one for Quora results the other for Reddit. In order to set them up in solr you must run:
 ```python
 # From your solr installation directory
@@ -27,9 +27,10 @@ scrapy runspider Quora.py
 # or
 scrapy runspider reddit.py
 ```
+Note to the Quora.py script: Quora's website requires you to update the autenthicated login key, usually by logging in, you can get it in the cookies and update it in the script.
 
 ## ☁️ Web UI
 No framework were used to elaborate the pages, it's pure html/css/javascript to keep it simple and minimalist. The only important detail is regarding the CORS issue when submitting requests to solr api, its required to either have an extension to your browser that allows you to temporarily disable CORS, or following the steps available [here](http://laurenthinoul.com/how-to-enable-cors-in-solr/)
 
 ## 📓 Report
-More details available inside the DogeSearch/report/report.pdf file
+More details available inside the Doge_Search/report/report.pdf file
