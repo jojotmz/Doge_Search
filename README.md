@@ -1,4 +1,4 @@
-# Doge_Search
+# Doge Search
 A search engine that allows users to search for question on Quora or topics on reddit related to a specific query. The search engine shall provide the user an interface for searching, browsing and presenting the results using a basic relevance-feedback implementation.
 
 ## 👉 Setup
@@ -22,8 +22,10 @@ potential malfunctioning
 ## 🕷️ Crawlers
 In order to run the scripts:
 ```python
--pip install scrapy
-scrapy runspider (Quora.py or reddit.py)
+pip install scrapy
+scrapy runspider Quora.py
+# or
+scrapy runspider reddit.py
 ```
 
 ## ☁️ Web UI
